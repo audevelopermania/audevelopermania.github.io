@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyTestmania — Android app</title>
+  <meta name="description" content="Landing page for the Android app MyTestmania (link to Google Play Store)">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;color:#111}
+    .container{max-width:960px;margin:2rem auto;padding:0 1rem}
+    header{display:flex;gap:1rem;align-items:center}
+    .icon{width:96px;height:96px;background:#f1f1f1;border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .icon img{width:100%;height:100%;object-fit:cover}
+    h1{font-size:1.5rem;margin:0}
+    .lead{color:#555;margin-top:.25rem}
+    .badge{margin-top:1rem}
+    .screens{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;margin-top:1.25rem}
+    .screenshot{background:#eee;border-radius:8px;overflow:hidden;min-height:120px;display:flex;align-items:center;justify-content:center}
+    .screenshot img{width:100%;height:100%;object-fit:cover}
+    footer{margin-top:2rem;color:#666;font-size:.9rem}
+    a.button{display:inline-block;padding:.5rem .75rem;background:#0f9d58;color:#fff;border-radius:6px;text-decoration:none}
+    @media (max-width:520px){header{gap:.75rem}.icon{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="icon" id="app-icon">
+        <!-- Replace this img src with the Play Store icon URL when available -->
+        <img src="https://via.placeholder.com/512x512?text=App+Icon" alt="App icon">
+      </div>
+      <div>
+        <h1>MyTestmania</h1>
+        <div class="lead">Android app — simple landing page. Link to Google Play Store below.</div>
+        <div class="badge">
+          <a href="https://play.google.com/store/apps/details?id=com.mytestmania.app&hl=en_AU" target="_blank" rel="noopener">
+            <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" style="height:48px;">
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2 style="margin-top:1.25rem">Screenshots</h2>
+      <p style="margin-top:0.25rem;color:#555">These are placeholder images. Replace the src attributes with the real Play Store screenshot URLs (hosted on play-lh.googleusercontent.com) once available.</p>
+      <div class="screens">
+        <div class="screenshot"><img src="https://via.placeholder.com/720x152?text=Screenshot+1" alt="Screenshot 1"></div>
+        <div class="screenshot"><img src="https://via.placeholder.com/720x152?text=Screenshot+2" alt="Screenshot 2"></div>
+        <div class="screenshot"><img src="https://via.placeholder.com/720x152?text=Screenshot+3" alt="Screenshot 3"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="margin-top:1.25rem">About</h2>
+      <p style="color:#444">This page serves as a simple static landing page for the Android app. It links to the Play Store listing you provided: <a href="https://play.google.com/store/apps/details?id=com.mytestmania.app&hl=en_AU" target="_blank" rel="noopener">Google Play - MyTestmania</a>.</p>
+
+      <p style="color:#444">How to replace screenshots and icon with real Play Store assets:</p>
+      <ol>
+        <li>Open the Play Store page in your desktop browser: <code>https://play.google.com/store/apps/details?id=com.mytestmania.app&amp;hl=en_AU</code></li>
+        <li>Right-click each screenshot or the app icon → "Open image in new tab" or "Copy image address" to get the direct URL (usually hosted on <code>play-lh.googleusercontent.com</code>).</li>
+        <li>Edit <code>index.html</code> in this repo and replace the placeholder <code>src</code> values with the real URLs, then commit.</li>
+      </ol>
+
+      <p style="color:#444">If you'd like, I can update this page with the exact image URLs if you provide them or if the Play Store page becomes accessible from my side.</p>
+    </section>
+
+    <footer>
+      <div>Created for <strong>com.mytestmania.app</strong>. Open the Play Store listing: <a href="https://play.google.com/store/apps/details?id=com.mytestmania.app&hl=en_AU" target="_blank" rel="noopener">https://play.google.com/store/apps/details?id=com.mytestmania.app&amp;hl=en_AU</a></div>
+    </footer>
+  </div>
+</body>
+</html>
